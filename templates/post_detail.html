@@ -7,7 +7,8 @@
 		<p><small>By: {{ post.author }}</small></p>
 	</div>
 	<div>
-		<a href="{% url 'home' %}">Back to blog list</a>
+		<a href="{% url 'home' %}">Back to blog list</a> | <a href="{% url 'post_edit' post.pk %}">Edit Post</a> |
+		 <a href="{% url 'post_delete' post.pk %}">Delete Post</a>
 	</div>
 {% endblock content %}
 
